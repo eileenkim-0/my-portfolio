@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Eileenkim</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="utility-toggle">
+        <button id="toggle-lang" class="toggle-btn">Aa</button>
+        <span class="toggle-divider">/</span>
+        <button id="toggle-theme" class="toggle-btn">
+            <img src="assets/icons/moon.svg" alt="Dark Mode">
+        </button>
+    </div>
+    <header class="profile-header">
+        <img src="assets/images/profile-pic.png" class="avatar" alt="Eileen Kim">
+
+        <div class="meta">
+            <div class="meta-location">
+                <img src="assets/icons/globe.svg" class="profile-header-icon" alt="">
+                <span>Oslo, Norway</span>
+            </div>
+
+            <div class="meta-clock">
+                <img src="assets/icons/clock.svg" class="profile-header-icon" alt="">
+                <time id="oslo-time"></time>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-section">
+            <p>
+                Hi, I'm Eileen - a frontend developer in training, building interfaces with JavaScript, TypeScript and React. I enjoy exploring the intersection of design and code, and I have a keen eye for clean, user-friendly interfaces.
+            </p>
+
+            <p>
+                Beyond code, I have a background in HR, organizational psychology, and leadership, which is giving me a people-first perspective on how products should actually work for the people using them.
+            </p>
+                
+            <p>
+                I'm actively building projects to sharpen my practical skills. If you have a project in mind, I'd love to hear about it.
+            </p>
+        </section>
+
+        <section class="github-section">
+            <img src="https://ghchart.rshah.org/eileenkim-0" alt="GitHub contribution graph">
+        </section>
+
+        <section class="contact-cta">
+            <p>Want to connect?</p>
+            <button class="cta-button" id="copy-mail">Contact</button>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="assets/icons/home-active.svg" alt="Home page">
+        </a>
+
+        <a href="projects.html" class="nav-item">
+            <img src="assets/icons/folder.svg" alt="My projects">
+        </a>
+
+        <a href="explored.html" class="nav-item">
+            <img src="assets/icons/search.svg" alt="Explored components">
+        </a>
+
+        <a href="about.html" class="nav-item">
+            <img src="assets/icons/code.svg" alt="My technology languages">
+        </a>
+
+        <button class="nav-item" id="toggle-socials">
+            <img src="assets/icons/chat.svg" alt="Socials">
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

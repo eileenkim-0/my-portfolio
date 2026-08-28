@@ -1,0 +1,19 @@
+
+:root {
+    --color-white: #fff;
+    --color-light-grey: #E3E3E3;
+    --color-grey: #8E8E93;
+    --color-black: #1c1c1e;
+    --color-accent: #ff8fa3;
+
+    --font-family: 'Inter';
+    --font-size-sm: 0.8rem;
+    --font-size-base: 1.12rem;
+    --font-size-lg: 1.25rem;
+
+}
+
+body.dark-mode {
+    --color-white: #303030;
+    --color-black: #F2F2F2;
+}
