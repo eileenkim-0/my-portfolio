@@ -1,0 +1,103 @@
+body.wide-layout {
+    max-width: 900px;
+}
+
+.projects-intro {
+    font-weight: 300;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    background: var(--color-light-grey);
+    color: var(--color-black);
+    border:none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.filter-btn.active {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.project-card {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-light-grey);
+    min-width: 0;
+
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.project-card-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.project-card-github img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.project-card-description {
+    color: var(--color-grey);
+    font-size: var(--font-size-base);
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.project-card-description.expanded {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+}
+
+.project-card-preview {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.project-card-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 640px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}

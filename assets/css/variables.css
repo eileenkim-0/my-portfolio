@@ -16,4 +16,5 @@
 body.dark-mode {
     --color-white: #303030;
     --color-black: #F2F2F2;
+    --color-light-grey: #454545
 }

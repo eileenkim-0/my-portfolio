@@ -1,4 +1,5 @@
 const themeBtn = document.getElementById('toggle-theme');
+const themeIcon = document.getElementById('toggle-icon');
 const copyBtn = document.getElementById('copy-mail');
 const email = 'lily8codes@gmail.com';
 
@@ -11,8 +12,10 @@ themeBtn.addEventListener('click', () => {
 
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
+    themeIcon.src = 'assets/icons/sun.svg';
   } else {
     localStorage.setItem('theme', 'light');
+    themeIcon.src = 'assets/icons/moon.svg';
   }
 });
 
@@ -27,18 +30,20 @@ function updateClock() {
     document.getElementById('oslo-time').textContent = timeString;
 }
 
-copyBtn.addEventListener('click', () => {
+if (copyBtn) {  
+  copyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(email)
-        .then( ()=> {
-            copyBtn.textContent = 'Copied!';
-            setTimeout(()=> {
-                copyBtn.textContent = 'Contact';
-            }, 2000);
-        })
-        .catch(()=> {
-            copyBtn.textContent = 'Failed to copy :(';
-        });
-});
+      .then(() => {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => {
+          copyBtn.textContent = 'Contact';
+        }, 2000);
+      })
+      .catch(() => {
+        copyBtn.textContent = 'Failed to copy :(';
+      });
+  });
+}
 
 updateClock();
 setInterval(updateClock, 60000);
