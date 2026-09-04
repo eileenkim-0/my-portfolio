@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Eileenkim</title>
+    <title>./projects</title>
 
     <link rel="icon" href="assets/icons/terminal.svg">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -51,27 +51,46 @@
     </main>
 
     <nav class="bottom-nav">
-        <a href="index.html" class="nav-item">
-            <img src="assets/icons/home.svg" alt="Home page">
-        </a>
+        <div class="nav-default" id="nav-default">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/home.svg" alt="Home page">
+            </a>
+            
+            <a href="projects.html" class="nav-item">
+                <img src="assets/icons/folder-active.svg" alt="My projects">
+            </a>
+            
+            <a href="explored.html" class="nav-item">
+                <img src="assets/icons/search.svg" alt="Explored components">
+            </a>
+            
+            <a href="tech.html" class="nav-item">
+                <img src="assets/icons/code.svg" alt="My technology languages">
+            </a>
+            
+            <button class="nav-item" id="toggle-socials">
+                <img src="assets/icons/chat.svg" alt="Socials">
+            </button>
+        </div>
 
-        <a href="projects.html" class="nav-item">
-            <img src="assets/icons/folder-active.svg" alt="My projects">
-        </a>
+        <div class="nav-socials" id="nav-socials" style="display: none;">
+            <button class="nav-item" id="close-socials">
+                <img src="assets/icons/back.svg" alt="Close socials">
+            </button>
 
-        <a href="explored.html" class="nav-item">
-            <img src="assets/icons/search.svg" alt="Explored components">
-        </a>
+            <a href="https://github.com/eileenkim-0" target="_blank" class="nav-item">
+                <img src="assets/icons/github-white.svg" alt="GitHub">
+            </a>
 
-        <a href="about.html" class="nav-item">
-            <img src="assets/icons/code.svg" alt="My technology languages">
-        </a>
+            <a href="https://linkedin.com/in/eileen-kim-417214236" target="_blank" class="nav-item">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
 
-        <button class="nav-item" id="toggle-socials">
-            <img src="assets/icons/chat.svg" alt="Socials">
-        </button>
+            <a href="https://instagram.com/eileenkim_" target="_blank" class="nav-item">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+        </div>
     </nav>
-
     <script src="script.js"></script>
     <script src="projects.js"></script>
 </body>

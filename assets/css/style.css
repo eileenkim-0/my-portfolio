@@ -139,6 +139,7 @@ main > section {
 .nav-item {
     width: 2.5rem;
     height: 2.5rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,10 +147,23 @@ main > section {
     background: none;
     border: none;
     text-decoration: none;
+    transition: background-color 0.15s ease;
     cursor: pointer;
 }
 
 .nav-item img {
     width: 1.8rem;
     height: 1.8rem;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 0.75rem;
+}
+
+.nav-default,
+.nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

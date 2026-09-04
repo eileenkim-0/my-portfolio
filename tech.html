@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>./skills</title>
+
+
+    <link rel="icon" href="assets/icons/terminal.svg">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tech.css">
+</head>
+<body>
+    <div class="utility-toggle">
+        <button id="toggle-lang" class="toggle-btn">Aa</button>
+        <span class="toggle-divider">/</span>
+        <button id="toggle-theme" class="toggle-btn">
+            <img id="toggle-icon" src="assets/icons/moon.svg" alt="Dark Mode">
+        </button>
+    </div>
+    <header class="profile-header">
+        <img src="assets/images/profile-pic.png" class="avatar" alt="Eileen Kim">
+
+        <div class="meta">
+            <div class="meta-location">
+                <img src="assets/icons/globe.svg" class="profile-header-icon" alt="">
+                <span>Oslo, Norway</span>
+            </div>
+
+            <div class="meta-clock">
+                <img src="assets/icons/clock.svg" class="profile-header-icon" alt="">
+                <time id="oslo-time"></time>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="tech-intro">
+            <p class="tech-intro">
+                I mostly build with vanilla 
+                <span class="inline-tag"><img src="assets/icons/html.svg" alt="">HTML</span>, 
+                <span class="inline-tag"><img src="assets/icons/css.svg" alt="">CSS</span> and 
+                <span class="inline-tag"><img src="assets/icons/javascript.svg" alt="">JavaScript</span> 
+                while I strengthen my fundamentals, but I'm also exploring modern frameworks like 
+                <span class="inline-tag"><img src="assets/icons/react.svg" alt="">React</span> and 
+                <span class="inline-tag"><img src="assets/icons/typescript.svg" alt="">TypeScript</span> 
+                to expand my skill set. My design work starts in 
+                <span class="inline-tag"><img src="assets/icons/figma.svg" alt="">Figma</span> 
+                before I translate it into code. When I'm not building, I keep a terminal open in 
+                <span class="inline-tag"><img src="assets/icons/vscode.svg" alt="">VS Code</span> with 
+                <span class="inline-tag"><img src="assets/icons/git.svg" alt="">Git</span> 
+                for version control.
+            </p>
+        </section>
+
+        <section class="tech-category">
+            <div class="tech-category-label">
+                <span>Languages</span>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">
+                    <img src="assets/icons/html.svg" alt="HTML logo">
+                    HTML
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/css.svg" alt="CSS logo">
+                    CSS
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/javascript.svg" alt="JavaScript logo">
+                    JavaScript
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/typescript.svg" alt="TypeScript logo">
+                    TypeScript
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/sql.svg" alt="SQL logo">
+                    SQL
+                </span>
+            </div>
+        </section>
+
+        <section class="tech-category">
+            <div class="tech-category-label">
+                <span>Frameworks & libraries</span>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">
+                    <img src="assets/icons/react.svg" alt="React logo">
+                    React
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/nodejs.svg" alt="Node.js logo">
+                    Node.js
+                </span>
+            </div>
+        </section>
+
+        <section class="tech-category">
+            <div class="tech-category-label">
+                <span>Development tools</span>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">
+                    <img src="assets/icons/git.svg" alt="Git logo">
+                    Git
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/github.svg" alt="GitHub logo">
+                    GitHub
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/vscode.svg" alt="VS Code logo">
+                    VS Code
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/npm.svg" alt="npm logo">
+                    npm
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/mysql.svg" alt="MySQL logo">
+                    MySQL
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/vercel.svg" alt="Vercel logo">
+                    Vercel
+                </span>
+            </div>
+        </section>
+
+        <section class="tech-category">
+            <div class="tech-category-label">
+                <span>Design & media</span>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">
+                    <img src="assets/icons/figma.svg" alt="Figma logo">
+                    Figma
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/photoshop.svg" alt="Photoshop logo">
+                    Photoshop
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/illustrator.svg" alt="Illustrator logo">
+                    Illustrator
+                </span>
+                <span class="tech-tag">
+                    <img src="assets/icons/canva.svg" alt="Canva logo">
+                    Canva
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <div class="nav-default" id="nav-default">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/home.svg" alt="Home page">
+            </a>
+            
+            <a href="projects.html" class="nav-item">
+                <img src="assets/icons/folder.svg" alt="My projects">
+            </a>
+            
+            <a href="explored.html" class="nav-item">
+                <img src="assets/icons/search.svg" alt="Explored components">
+            </a>
+            
+            <a href="tech.html" class="nav-item">
+                <img src="assets/icons/code-active.svg" alt="My technology languages">
+            </a>
+            
+            <button class="nav-item" id="toggle-socials">
+                <img src="assets/icons/chat.svg" alt="Socials">
+            </button>
+        </div>
+
+        <div class="nav-socials" id="nav-socials" style="display: none;">
+            <button class="nav-item" id="close-socials">
+                <img src="assets/icons/back.svg" alt="Close socials">
+            </button>
+
+            <a href="https://github.com/eileenkim-0" target="_blank" class="nav-item">
+                <img src="assets/icons/github-white.svg" alt="GitHub">
+            </a>
+
+            <a href="https://linkedin.com/in/eileen-kim-417214236" target="_blank" class="nav-item">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://instagram.com/eileenkim_" target="_blank" class="nav-item">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>

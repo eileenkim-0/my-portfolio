@@ -3,6 +3,11 @@ const themeIcon = document.getElementById('toggle-icon');
 const copyBtn = document.getElementById('copy-mail');
 const email = 'lily8codes@gmail.com';
 
+const toggleSocialsBtn = document.getElementById('toggle-socials');
+const closeSocialsBtn = document.getElementById('close-socials');
+const navDefault = document.getElementById('nav-default');
+const navSocials = document.getElementById('nav-socials');
+
 if(localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
 }
@@ -42,6 +47,20 @@ if (copyBtn) {
       .catch(() => {
         copyBtn.textContent = 'Failed to copy :(';
       });
+  });
+}
+
+if (toggleSocialsBtn) {
+  toggleSocialsBtn.addEventListener('click', () => {
+    navDefault.style.display = 'none';
+    navSocials.style.display = 'flex';
+  });
+}
+
+if (closeSocialsBtn) {
+  closeSocialsBtn.addEventListener('click', () => {
+    navDefault.style.display = 'flex';
+    navSocials.style.display = 'none';
   });
 }
 

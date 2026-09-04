@@ -38,11 +38,11 @@
     <main>
         <section class="text-section">
             <p>
-                Hi, I'm Eileen - a frontend developer in training, building interfaces with JavaScript, TypeScript and React. I enjoy exploring the intersection of design and code, and I have a keen eye for clean, user-friendly interfaces.
+                Hi, I'm Eileen - a frontend developer in training, building interfaces with JavaScript, TypeScript and React. I enjoy exploring the intersection of design and code and I have a keen eye for clean, user-friendly interfaces.
             </p>
 
             <p>
-                Beyond code, I have a background in HR, organizational psychology, and leadership, which is giving me a people-first perspective on how products should actually work for the people using them.
+                Beyond code, I have a background in HR, organizational psychology and leadership, which is giving me a people-first perspective on how products should actually work for the people using them.
             </p>
                 
             <p>
@@ -61,25 +61,45 @@
     </main>
 
     <nav class="bottom-nav">
-        <a href="index.html" class="nav-item">
-            <img src="assets/icons/home-active.svg" alt="Home page">
-        </a>
+        <div class="nav-default" id="nav-default">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/home-active.svg" alt="Home page">
+            </a>
+            
+            <a href="projects.html" class="nav-item">
+                <img src="assets/icons/folder.svg" alt="My projects">
+            </a>
+            
+            <a href="explored.html" class="nav-item">
+                <img src="assets/icons/search.svg" alt="Explored components">
+            </a>
+            
+            <a href="tech.html" class="nav-item">
+                <img src="assets/icons/code.svg" alt="My technology languages">
+            </a>
+            
+            <button class="nav-item" id="toggle-socials">
+                <img src="assets/icons/chat.svg" alt="Socials">
+            </button>
+        </div>
 
-        <a href="projects.html" class="nav-item">
-            <img src="assets/icons/folder.svg" alt="My projects">
-        </a>
+        <div class="nav-socials" id="nav-socials" style="display: none;">
+            <button class="nav-item" id="close-socials">
+                <img src="assets/icons/back.svg" alt="Close socials">
+            </button>
 
-        <a href="explored.html" class="nav-item">
-            <img src="assets/icons/search.svg" alt="Explored components">
-        </a>
+            <a href="https://github.com/eileenkim-0" target="_blank" class="nav-item">
+                <img src="assets/icons/github-white.svg" alt="GitHub">
+            </a>
 
-        <a href="about.html" class="nav-item">
-            <img src="assets/icons/code.svg" alt="My technology languages">
-        </a>
+            <a href="https://linkedin.com/in/eileen-kim-417214236" target="_blank" class="nav-item">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
 
-        <button class="nav-item" id="toggle-socials">
-            <img src="assets/icons/chat.svg" alt="Socials">
-        </button>
+            <a href="https://instagram.com/eileenkim_" target="_blank" class="nav-item">
+                <img src="assets/icons/instagram.svg" alt="Instagram">
+            </a>
+        </div>
     </nav>
 
     <script src="script.js"></script>

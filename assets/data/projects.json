@@ -2,7 +2,7 @@
     {
         "title": "Colored.gg",
         "description": "A color-guessing game inspired by dialed.gg! You're shown a color and try to recreate it using Hue, Saturation, and Brightness sliders, then get scored on how close you got. Built with vanilla HTML, CSS, and JS.",
-        "image": "assets/images/colored-gg.png",
+        "image": "assets/images/project-page/colored-gg.png",
         "link": "https://github.com/eileenkim-0/colored.gg",
         "category": "app"
     },
@@ -10,7 +10,7 @@
     {
         "title": "Brew & Focus",
         "description": "A cozy café-themed Pomodoro timer app with hand-drawn illustrations! Built with vanilla HTML, CSS and JS.",
-        "image": "assets/images/brew-and-focus.png",
+        "image": "assets/images/project-page/brew-and-focus.png",
         "link": "https://github.com/eileenkim-0/brew-and-focus",
         "category": "app"
     
@@ -19,7 +19,7 @@
     {
         "title": "Gatherly",
         "description": "A group project where users can discover, create, and join social or professional events all in one place. Includes filtering by price, category, and date, plus posts, comments, and reactions for engagement. Built with TypeScript, HTML, and CSS.",
-        "image": "assets/images/gatherly.png",
+        "image": "assets/images/project-page/gatherly.png",
         "link": "https://github.com/Harzvik/gatherly-gruppe-3",
         "category": "app"
     },
@@ -27,7 +27,7 @@
    {
         "title": "Infinite Scroll",
         "description": "A responsive image gallery with infinite scroll, dynamically loading photos from the Unsplash API as you scroll for a seamless browsing experience. Built with vanilla HTML, CSS and JavaScript.",
-        "image": "assets/images/infinite-scroll.png",
+        "image": "assets/images/project-page/infinite-scroll.png",
         "link": "https://github.com/eileenkim-0/infinite-scroll",
         "category": "app"
     },
@@ -35,7 +35,7 @@
     {
         "title": "Quote Generator",
         "description": "A simple project that shows random motivational quotes to inspire and uplift. Pulls from a collection of quotes by well-known modern figures. Built with vanilla HTML, CSS and JavaScript.",
-        "image": "assets/images/affirmation.png",
+        "image": "assets/images/project-page/affirmation.png",
         "link": "https://github.com/eileenkim-0/quote-generator",
         "category": "app"
     },
@@ -43,7 +43,7 @@
     {
         "title": "Joke Teller",
         "description": "A fun little site that tells programming jokes out loud! Click a button to fetch a random joke from an online API, which is then read aloud using a text-to-speech API. Built with vanilla HTML, CSS and JavaScript.",
-        "image": "assets/images/joke-teller.png",
+        "image": "assets/images/project-page/joke-teller.png",
         "link": "https://github.com/eileenkim-0/joke-teller",
         "category": "app"
 
