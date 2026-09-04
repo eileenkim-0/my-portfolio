@@ -1,0 +1,88 @@
+body.wide-layout {
+    max-width: 900px;
+}
+
+.explored-intro {
+    font-weight: 300;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+.explored-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (min-width: 640px) {
+    .explored-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.explored-card {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-light-grey);
+    min-width: 0;
+}
+
+.accordion-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    height: 18rem;
+    justify-content: center;
+}
+
+.accordion-item {
+    width: 5.5rem;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: width 0.35s ease;
+    cursor: pointer;
+}
+
+.accordion-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 50%);
+}
+
+.accordion-item.active {
+    width: 20rem;
+}
+
+.accordion-content {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    white-space: normal;
+    transition: opacity 0.2s ease;
+    transition-delay: 0.15s;
+    width: 100%;
+}
+
+.accordion-item.active .accordion-content {
+    opacity: 1;
+}
+
+.accordion-content h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.accordion-content p {
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+}
