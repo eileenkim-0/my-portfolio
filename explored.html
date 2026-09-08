@@ -42,6 +42,7 @@
         </section>
 
         <section class="explored-grid">
+            <!-- Explored Cards -->
             <div class="explored-card" data-experiment="accordion">
                 <div class="accordion-wrapper">
                     <div class="accordion-item active" style="background-image: url('assets/images/explore-page/jeju.jpeg');">
@@ -64,7 +65,41 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Slider -->
+            <div class="explored-card" data-experiment="slider">
+                <p class="slider-label">Try to drag me!</p>
+                <div class="slider-wrapper">
+                    <div class="slider-bubble" id="slider-bubble">50%</div>
+                    <input type="range" min="0" max="100" value="50" class="range-slider" id="range-slider">
+                </div>
+            </div>
 
+            <!-- Scramble -->
+            <div class="explored-card" data-experiment="scramble">
+                <p class="scramble-label">Hover me!</p>
+                <div class="scramble-content">
+                    <h3 class="scramble-text" data-text="CODE. LEARN. REPEAT.">CODE. LEARN. REPEAT.</h3>
+                </div>
+            </div>
+
+            <!-- Music Player -->
+            <div class="explored-card" data-experiment="music">
+                <div class="music-player">
+                    <div class="music-cover-wrapper">
+                        <img src="assets/images/explore-page/blink182.webp" alt="Blink 182 Album Cover" class="music-cover" id="music-cover">
+                    </div>
+                    <p class="music-artist">blink-182</p>
+                    <h4 class="music-title">First date</h4>
+                    <div class="music-progress-bar">
+                        <div class="music-progress-fill" id="music-progress-fill"></div>
+                    </div>
+                    <div class="music-time">
+                        <span id="music-current-time">0:00</span>
+                        <span id="music-total-time">2:49</span>
+                    </div>
+                </div>
+            </div>
             <!-- Add more explored cards here -->
         </section>
 
