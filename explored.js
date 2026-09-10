@@ -58,6 +58,90 @@ if(scrambleEl) {
   scrambleEl.addEventListener('mouseenter', scramble);
 }
 
+// Contrast checker
+const contrastBg = document.getElementById('contrast-bg');
+const contrastText = document.getElementById('contrast-text');
+const contrastBgHex = document.getElementById('contrast-bg-hex');
+const contrastTextHex = document.getElementById('contrast-text-hex');
+const contrastPreview = document.getElementById('contrast-preview');
+const contrastPreviewText = document.getElementById('contrast-preview-text');
+const contrastRatio = document.getElementById('contrast-ratio');
+const contrastQualityLabel = document.getElementById('contrast-quality-label');
+const contrastStars = document.getElementById('contrast-stars');
+
+if(contrastBg) {
+  function hexToRgb(hex) {
+    const r = parseInt(hex.slice(1,3), 16);
+    const g = parseInt(hex.slice(3,5), 16);
+    const b = parseInt(hex.slice(5,7), 16);
+    return[r,g,b];
+  }
+
+  function getLuminance([r,g,b]) {
+    const [rs, gs, bs] = [r,g,b].map(c => {
+      c /= 255;
+      return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055)/1.055, 2.4);
+    });
+    return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+  }
+
+  function getContrastRatio(hex1, hex2) {
+    const lum1 = getLuminance(hexToRgb(hex1));
+    const lum2 = getLuminance(hexToRgb(hex2));
+    const lighter = Math.max(lum1,lum2);
+    const darker = Math.min(lum1,lum2);
+    return (lighter + 0.05) / (darker + 0.05);
+  }
+
+  function getQuality(ratio) {
+    if (ratio >= 7) return {label: 'Excellent!', stars: 5};
+    if (ratio >= 4.5) return {label: 'Good', stars: 4};
+    if (ratio >= 3) return { label: 'Meh', stars: 3 };
+    if (ratio >= 2) return { label: 'Poor', stars: 2 };
+    return { label: 'Fail', stars: 1 };
+  }
+
+  function updateContrast() {
+    const bg = contrastBg.value;
+    const text = contrastText.value;
+
+    contrastPreview.style.backgroundColor = bg;
+    contrastPreviewText.style.color = text;
+
+    const ratio = getContrastRatio(bg, text);
+    contrastRatio.textContent = ratio.toFixed(2);
+
+    const {label, stars} = getQuality(ratio);
+    contrastQualityLabel.textContent = label;
+    contrastStars.textContent = '★'.repeat(stars) + '☆'.repeat(5 - stars);
+  }
+
+  contrastBg.addEventListener('input', () => {
+    contrastBgHex.value = contrastBg.value.toUpperCase();
+    updateContrast();
+  });
+  contrastText.addEventListener('input', () => {
+    contrastTextHex.value = contrastText.value.toUpperCase();
+    updateContrast();
+  });
+
+    contrastBgHex.addEventListener('input', () => {
+    if (/^#[0-9A-Fa-f]{6}$/.test(contrastBgHex.value)) {
+      contrastBg.value = contrastBgHex.value;
+      updateContrast();
+    }
+  });
+  contrastTextHex.addEventListener('input', () => {
+    if (/^#[0-9A-Fa-f]{6}$/.test(contrastTextHex.value)) {
+      contrastText.value = contrastTextHex.value;
+      updateContrast();
+    }
+  });
+
+  updateContrast();
+
+}
+
 // Music-player
 const musicCover = document.getElementById('music-cover');
 const progressFill = document.getElementById('music-progress-fill');

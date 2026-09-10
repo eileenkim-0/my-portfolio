@@ -83,6 +83,46 @@
                 </div>
             </div>
 
+            <!-- Contrast checker -->
+                <div class="explored-card" data-experiment="contrast">
+                    <p class="contrast-label">Check color contrast!</p>
+                    <div class="contrast-body">
+                        <div class="contrast-texts">
+                            <div class="contrast-inputs">
+                                <label class="contrast-input-group">
+                                    <span>Text color</span>
+                                    <div class="contrast-input-wrapper">
+                                        <input type="text" id="contrast-text-hex" value="#FFFFFF" maxlength="7">
+                                        <input type="color" id="contrast-text" value="#FFFFFF">
+                                    </div>
+                                </label>
+                            
+                                <label class="contrast-input-group">
+                                    <span>Background color</span>
+                                    <div class="contrast-input-wrapper">
+                                        <input type="text" id="contrast-bg-hex" value="#1C1C1E" maxlength="7">
+                                        <input type="color" id="contrast-bg" value="#1C1C1E">
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="contrast-result" id="contrast-result">
+                                <div class="contrast-score">
+                                    <span class="contrast-ratio" id="contrast-ratio">10.0</span>
+                                    <div class="contrast-quality">
+                                        <span class="contrast-quality-label" id="contrast-quality-label">Excellent!</span>
+                                        <span class="contrast-stars" id="contrast-stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contrast-preview" id="contrast-preview">
+                            <span id="contrast-preview-text">Aa</span>
+                        </div>
+                    </div>
+                </div>
+
             <!-- Music Player -->
             <div class="explored-card" data-experiment="music">
                 <div class="music-player">
@@ -100,6 +140,8 @@
                     </div>
                 </div>
             </div>
+
+            
             <!-- Add more explored cards here -->
         </section>
 

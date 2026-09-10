@@ -160,7 +160,7 @@ body.wide-layout {
     transform: translateX(-50%);
 }
 
-/* Scramble Text */
+/* Scramble text */
 .explored-card[data-experiment="scramble"] {
     display: flex;
     flex-direction: column;
@@ -191,6 +191,120 @@ body.wide-layout {
     cursor: default;
 }
 
+/* Contrast checker */
+.explored-card[data-experiment="contrast"]{
+    display: flex;
+    flex-direction: column;
+    min-height: 21rem;
+    max-height: 21rem;
+
+}
+.contrast-label {
+    color: var(--color-grey);
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--font-size-base);
+    margin-bottom: 1rem;
+}
+.contrast-body {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+}
+.contrast-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+}
+.contrast-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contrast-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.contrast-input-group span {
+    color: var(--color-black);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+.contrast-input-wrapper {
+    background: var(--color-white);
+    border-radius: 0.75rem;
+    padding: 0.4rem 0.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.contrast-input-wrapper input[type="text"] {
+    color: var(--color-black);
+    background-color: transparent;
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+    flex: 1;
+}
+.contrast-input-wrapper input[type="color"] {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    padding: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.contrast-result {
+    background: var(--color-white);
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.contrast-score {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.contrast-ratio {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contrast-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+.contrast-quality-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+.contrast-stars {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.contrast-preview {
+    font-size: 2rem;
+    font-weight: 600;
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 14.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Music player */
 .explored-card[data-experiment="music"] {
     display: flex;
     flex-direction: column;
