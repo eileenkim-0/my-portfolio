@@ -13,6 +13,12 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    body {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
 main > section {
     margin-bottom: 2.5rem;
 }
