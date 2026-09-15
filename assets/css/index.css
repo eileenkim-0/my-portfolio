@@ -1,0 +1,98 @@
+.section-label {
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    color: var(--color-grey);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-label::before {
+    content: "";
+    width: 1rem;
+    height: 1px;
+    background-color: var(--color-grey);
+}
+
+.section-label::after {
+    content: "";
+    height: 1px;
+    background-color: var(--color-grey);
+    flex: 1;
+}
+
+.aboutme-section p {
+    font-weight: 300;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.aboutme-section p:last-child {
+    margin-bottom: 0;
+}
+
+.inline-link {
+    color: var(--color-black);
+    text-decoration: underline;
+    font-weight: 600;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    vertical-align: middle;
+
+    transition: color 0.2s ease;
+}
+
+.inline-link:visited {
+    color: var(--color-black);
+}
+
+.inline-link-letterboxd:hover {
+    color: #40bcf4;
+}
+
+.inline-link-spotify:hover {
+    color: #1DB954;
+}
+
+.inline-link img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.spotify-spinning {
+    animation: spin-cd 3s linear infinite;
+}
+
+@keyframes spin-cd {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.cloud-hover {
+    position: relative;
+}
+
+.cloud-hover::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F0EDE5;
+    border-bottom: 1px solid var(--color-grey);
+    transition: width 0.3s ease;
+}
+
+.cloud-hover:hover::after {
+    width: 100%;
+}
+
+.aboutme-section:last-child {
+    margin-bottom: 12rem;
+}

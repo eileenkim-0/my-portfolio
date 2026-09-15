@@ -9,7 +9,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        padding-top: 8.5rem;
+        padding-top: 12rem;
     }
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 main > section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 }
 
 .utility-toggle {
@@ -93,7 +93,7 @@ main > section {
 }
 
 .github-section {
-    margin-bottom: 4.5rem;
+    margin-bottom: 6.5rem;
 }
 
 .github-section img {
@@ -108,6 +108,7 @@ main > section {
     background-color: #E3E3E3;
     border-radius: 2rem;
     padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    margin-bottom: 25rem;
 }
 
 .contact-cta p {
